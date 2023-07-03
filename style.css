@@ -1,0 +1,197 @@
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary
+time, mark, audio, video {
+	margin: 0 ;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@font-face {
+    font-family: tropical-asia;
+    src: url(myFont/TropicalAsianDEMO-Regular.woff)
+}
+
+iframe{
+    width: 350px;
+    height: 350px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 120px;
+    font-family: tropical-asia;
+    transition: 1.2s ease-out;
+}
+.head:hover{
+    color: red;
+    transform: scaleX(1.05);
+}
+
+.box1,.box2{
+    width: 350px;
+    height: 450px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 30px 30px;
+    box-shadow:  1px 5px 25px #7a7a7a;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 200px;
+
+}
+.top{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    font-size: 40px;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    font-family: tropical-asia;
+    transition: 1.5s ease-out;
+    
+}
+.top:hover{
+    color: red;
+    transform: scale(1.2);
+}
+.lower{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 30px 30px 0 0 ;
+    font-family: tropical-asia;    
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vs{
+    width: max-content;
+    height: fit-content;
+    font-size: 200px;
+    font-family: tropical-asia;
+    transition: 1s ease-out;
+}
+.vs:hover{
+    transform: scale(1.2);
+    color: red;
+}
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    transition: 1s ease-out;
+    
+    
+}
+.player:hover{
+    transform: scaleX(1.1)  translateX(20px);   
+    box-shadow: 1px 5px 25px #7a7a7a;
+    font-size: 40px;
+    cursor: pointer;
+}
+.bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    transition:  1s ease-out;
+    
+}
+.bot:hover{
+    transform: scaleX(1.1)  translateX(-20px);   
+    box-shadow: 1px 5px 25px #7a7a7a;
+    font-size: 40px;
+    cursor: pointer;
+}
+.start{
+    font-size: 70px;
+    font-family: tropical-asia;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow:  1px 5px 25px #7a7a7a;
+    cursor: pointer;
+    transition: 1s ease-out;
+}
+.start:hover{
+    color: red;
+    transform: scale(1.2) ;
+}
+.score{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: xx-large;
+}
+.return{
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-family: tropical-asia;
+    cursor: pointer;
+}
+.points-box1, .points-box2{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  1px 5px 25px #7a7a7a;
+    width: 250px;
+   
+}
+.boardbox{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px) ;
+    justify-content: center;
+    align-content: center;
+    opacity: .5;
+}
+.game-box{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    box-shadow:  1px 5px 25px #7a7a7a;
+}
+
+.game{
+    margin-top: 100px;
+}
